@@ -1,0 +1,32 @@
+body {
+  background-color: rgba(224, 223, 233, 1) !important;
+}
+
+.navbar {
+  margin: 50px 0;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+}
+
+.nav-item a {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif !important;
+  color: rgba(42, 37, 112, 1) !important;
+  font-size: 1em;
+
+}
+
+.nav-item a:hover {
+  color: rgba(122, 119, 166, 1) !important;
+}
+
+p {
+  text-align: center;
+}
+
+/*
+og bg: 206, 204, 232
+og font: 71, 66, 130
+*/
