@@ -1,9 +1,12 @@
 body {
-  background-color: rgba(224, 223, 233, 1) !important;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 .navbar {
-  margin: 50px 0;
+  z-index: 1;
+  background-color: transparent;
+  margin: 50px 0 !important;
 }
 
 .navbar-brand {
@@ -13,21 +16,90 @@ body {
 .nav-item a {
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif !important;
-  color: rgba(42, 37, 112, 1) !important;
-  font-size: 1em;
-
+  font-size: .9em;
+  color: rgba(71, 56, 96, 1)!important;
 }
 
 .nav-item a:hover {
   color: rgba(122, 119, 166, 1) !important;
 }
 
-p {
+figure .container {
+  text-overflow: ellipsis;
+  position: relative;
   text-align: center;
-  font-family: 'Open Sans', sans-serif !important;
-  color: rgba(42, 37, 112, 1) !important;
-  font-weight: lighter;
-  font-size: .9em;
+  white-space: nowrap;
+}
+
+#main-text {
+  padding: 50px 90px;
+  background-color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 200;
+  transform: translate(-50%, -50%);
+
+}
+
+p {
+  font-family: 'helvetica', sans-serif !important;
+  color: rgba(92, 89, 125, 1) !important;
+  font-size: .8em;
+}
+
+p:last-child {
+  margin-bottom: 0px !important;
+}
+
+/* CSS */
+
+figure {
+
+}
+
+#shapes {
+
+}
+
+.frame {
+  background: #fff;
+  width: 100px;
+  height: 100px;
+	padding: 60px;
+	float: left;
+	display: inline;
+	margin: 5px;
+	box-shadow: 0 0 5px #000;
+}
+
+
+.star12 {
+	background-color: rgba(192, 187, 208, .1);
+	width: 600px;
+	height: 600px;
+	border: solid 1px rgba(223, 221, 232, 1);
+	position: relative;
+}
+
+.star12:before {
+	content: "";
+	background-color: rgba(192, 187, 208, .1);
+	width: 600px;
+	height: 600px;
+	border: solid 1px rgba(223, 221, 232, 1);
+	position: absolute;
+	transform: rotate(30deg);
+}
+
+.star12:after {
+	content: "";
+	background-color: rgba(192, 187, 208, .1);
+	width: 600px;
+	height: 600px;
+	border: solid 1px rgba(223, 221, 232, 1);
+	position: absolute;
+	transform: rotate(60deg);
 }
 
 /*
