@@ -24,6 +24,10 @@ body {
 
 p {
   text-align: center;
+  font-family: 'Open Sans', sans-serif !important;
+  color: rgba(42, 37, 112, 1) !important;
+  font-weight: lighter;
+  font-size: .9em;
 }
 
 /*
