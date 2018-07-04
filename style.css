@@ -1,67 +1,89 @@
-
-
 .navbar {
-  z-index: 1;
   background-color: transparent;
-  margin: 50px 0 !important;
+  padding: 50px 0 100px 0 !important;
 }
 
 .navbar-brand {
+  font-weight: 300;
+  letter-spacing: 3px;
   text-transform: uppercase;
+  color: rgba(154, 141, 174, .7)!important;
 }
 
-.navbar-brand a {
-  color: rgba(154, 141, 174);
+.navbar-brand:hover {
+  color: rgba(154, 141, 174, 1)!important;
 }
 
 .nav-item a {
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif !important;
   font-size: .9em;
+  margin-left: 25px !important;
+  text-align: center;
   letter-spacing: 1px;
-  color: rgba(154, 141, 174, 1)!important;
+  color: rgba(154, 141, 174, .7)!important;
 }
 
 .nav-item a:hover {
-  color: rgba(122, 119, 166, 1) !important;
+  color: rgba(154, 141, 174, 1)!important;
 }
 
-figure .container {
-  position: relative;
+h1 {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: .9em !important;
+  letter-spacing: 1px;
+  color: rgba(154, 141, 174, .7) !important;
+}
+
+h2 {
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: .8em !important;
+  letter-spacing: 1px;
+  color: rgba(154, 141, 174, .7) !important;
+}
+
+.horizontal * {
+  margin-bottom: 25px;
+}
+
+.horizontal *:last-child {
+  margin-bottom: 50px;
+}
+
+.img-horizontal {
+  margin-bottom: 50px;
+}
+
+h3.box-link {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: .7em !important;
+  text-transform: uppercase;
   text-align: center;
+  letter-spacing: 1px;
 }
 
-.container img {
-  height: 700px;
+h3.box-link a {
+  text-decoration: underline;
+  color: rgba(154, 141, 174, .7);
 }
 
-#main-text {
-  padding: 40px 80px;
-  background-color: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 200;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
+h3.box-link:hover {
+  color: rgba(154, 141, 174, 1);
 }
 
-p {
-  font-family: 'helvetica', sans-serif !important;
-  color: rgba(92, 89, 125, 1) !important;
-  font-size: 1em;
-}
-
-p:last-child {
-  margin-bottom: 0px !important;
+h3.box-link:hover a {
+  text-decoration: none;
 }
 
 
+/* journey */
 
+.horizontal-gallery {
+  margin-bottom: 50px;
+}
 
-
-
-/*
-og bg: 206, 204, 232
-og font: 71, 66, 130
-*/
+.horizontal-gallery a:hover {
+  margin-bottom: 50px;
+}
