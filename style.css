@@ -80,6 +80,10 @@ h3.box-link:hover a {
 
 /* journey */
 
+.img-horizontal:hover {
+  opacity: .7;
+  transition: .5s;
+}
 .horizontal-gallery {
   margin-bottom: 50px;
 }
