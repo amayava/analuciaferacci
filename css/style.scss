@@ -1,15 +1,18 @@
 /* VARIABLES */
 
 $font-stack: 'Open Sans', sans-serif;
-$font-size: .85em;
+$font-size: .82em;
 $letter-spacing: 1px;
 $color: #A6A4A9;
 $color-active: #A6A4A9;
 $color-hover: #C7C6C9;
-$text-margin: 20px;
+$text-margin: 10px;
 $text-align: justify;
 $lg-text-margin: 40px;
-$img-margin: 5px;
+
+$img-margin: 20px;
+$img-opacity: .8;
+$img-saturation: saturate(60%);
 
 /* MIXINS */
 
@@ -21,29 +24,45 @@ $img-margin: 5px;
   color: $color !important;
 }
 
+@mixin title {
+  text-transform: uppercase;
+  font-size: .9em;
+}
+
 @mixin img-style {
   padding-bottom: $img-margin;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+@mixin img-link-style {
+  filter: $img-saturation;
+  opacity: $img-opacity;
 }
 
 @mixin link-style {
   color: $color-active;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
 }
 
 @mixin link-style-hover {
   text-decoration: none;
   color: $color-hover;
+  border: solid .5px $color-hover;
 }
 
 @mixin box-link {
   font-size: .7em !important;
   text-transform: uppercase;
   padding: 10px;
-  border: solid .5px $color;
-}
 
-@mixin title {
-  text-transform: uppercase;
-  font-size: .9em;
 }
 
 /* STYLE */
@@ -53,6 +72,10 @@ nav {
   padding: 80px 0 80px 0 !important;
   .navbar-brand {
     @include nav-style;
+  }
+  a .navbar-brand {
+      font-size: 1.3em !important;
+
   }
   .navbar-toggler {
     border: none !important;
@@ -92,6 +115,9 @@ nav {
   }
   a {
     @include link-style;
+    img:hover {
+      @include img-link-style;
+    }
   }
   a:hover {
     @include link-style-hover;
@@ -99,10 +125,8 @@ nav {
 }
 
 .text-section:last-child {
-      margin-bottom: $lg-text-margin;
-
+  margin-bottom: $lg-text-margin;
 }
-/* SOUND */
 
 .box-link {
   text-align: center;
