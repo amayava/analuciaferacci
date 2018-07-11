@@ -1,8 +1,10 @@
 /* VARIABLES */
 
 $font-stack: 'Futura PT', 'Open Sans', sans-serif;
-$font-size: .82em;
-$letter-spacing: 1px;
+$font-size: .90em;
+$letter-spacing: .8px;
+$word-spacing: .05em;
+$line-height: 18px;
 $color: #A6A4A9;
 $color-active: #A6A4A9;
 $color-hover: #C7C6C9;
@@ -66,6 +68,10 @@ $img-saturation: saturate(60%);
 
 /* STYLE */
 
+body {
+  background-color: #FFFDFC;
+}
+
 nav {
   text-align: center;
   padding: 80px 0 120px 0 !important;
@@ -94,6 +100,7 @@ nav {
   font-family: $font-stack;
   font-size: $font-size;
   letter-spacing: $letter-spacing;
+  word-spacing: $word-spacing;
   color: $color;
   img {
     @include img-style;
@@ -101,6 +108,7 @@ nav {
   h1, h2, h3 {
     font-size: $font-size;
     margin-bottom: $text-margin;
+    line-height: $line-height;
   }
   h1 {
     @include title;

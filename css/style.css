@@ -1,6 +1,9 @@
 /* VARIABLES */
 /* MIXINS */
 /* STYLE */
+body {
+  background-color: #FFFDFC; }
+
 nav {
   text-align: center;
   padding: 80px 0 120px 0 !important; }
@@ -27,8 +30,9 @@ nav {
 
 .container {
   font-family: "Futura PT", "Open Sans", sans-serif;
-  font-size: 0.82em;
-  letter-spacing: 1px;
+  font-size: 0.9em;
+  letter-spacing: 0.8px;
+  word-spacing: 0.05em;
   color: #A6A4A9; }
   .container img {
     padding-bottom: 20px;
@@ -38,8 +42,9 @@ nav {
     -ms-transition: .5s;
     -o-transition: .5s; }
   .container h1, .container h2, .container h3 {
-    font-size: 0.82em;
-    margin-bottom: 10px; }
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    line-height: 18px; }
   .container h1 {
     text-transform: uppercase;
     font-size: .9em; }
