@@ -1,13 +1,13 @@
 /* VARIABLES */
 
-$font-stack: 'Futura PT', 'Open Sans', sans-serif;
+$font-stack: 'Open Sans', sans-serif;
 $font-size: .82em;
 $letter-spacing: 1px;
 $color: #A6A4A9;
 $color-active: #A6A4A9;
 $color-hover: #C7C6C9;
 $text-margin: 10px;
-$text-align: left;
+$text-align: justify;
 $lg-text-margin: 40px;
 
 $img-margin: 20px;
@@ -55,6 +55,7 @@ $img-saturation: saturate(60%);
 @mixin link-style-hover {
   text-decoration: none;
   color: $color-hover;
+  border: solid .5px $color-hover;
 }
 
 @mixin box-link {

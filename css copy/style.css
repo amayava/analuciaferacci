@@ -5,7 +5,7 @@ nav {
   text-align: center;
   padding: 80px 0 120px 0 !important; }
   nav .navbar-brand {
-    font-family: "Futura PT", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -19,14 +19,14 @@ nav {
       padding: 0px !important;
       margin-left: 2em !important; } }
   nav a {
-    font-family: "Futura PT", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #A6A4A9 !important; }
 
 .container {
-  font-family: "Futura PT", "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 0.82em;
   letter-spacing: 1px;
   color: #A6A4A9; }
@@ -44,7 +44,7 @@ nav {
     text-transform: uppercase;
     font-size: .9em; }
   .container h2 {
-    text-align: left; }
+    text-align: justify; }
   .container h3 {
     margin: 40px 0; }
   .container a {
@@ -59,7 +59,8 @@ nav {
       opacity: 0.8; }
   .container a:hover {
     text-decoration: none;
-    color: #C7C6C9; }
+    color: #C7C6C9;
+    border: solid 0.5px #C7C6C9; }
 
 .text-section:last-child {
   margin-bottom: 40px; }
