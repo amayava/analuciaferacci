@@ -1,7 +1,7 @@
 /* VARIABLES */
 
 $font-stack: 'Futura PT', 'Open Sans', sans-serif;
-$font-size: .90em;
+$font-size: .95em;
 $letter-spacing: .8px;
 $word-spacing: .05em;
 $line-height: 18px;
@@ -20,10 +20,14 @@ $img-saturation: saturate(60%);
 
 @mixin nav-style {
   font-family: $font-stack;
-  font-size: 1em;
+  font-size: .95em;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: $color !important;
+}
+
+@mixin nav-brand-style {
+  font-size: 1.3em;
 }
 
 @mixin title {
@@ -63,7 +67,7 @@ $img-saturation: saturate(60%);
   font-size: .7em !important;
   text-transform: uppercase;
   padding: 10px;
-
+  border: 1px solid $color;
 }
 
 /* STYLE */
@@ -75,15 +79,12 @@ body {
 nav {
   text-align: center;
   padding: 80px 0 120px 0 !important;
+  a {
+    @include nav-style;
+  }
   .navbar-brand {
     @include nav-style;
-    a {
-      font-size: 1.3em !important;
-    }
-  }
-
-  .navbar-toggler {
-    border: none !important;
+    @include nav-brand-style;
   }
   .nav-link {
     @media screen and (min-width: 992px) {
@@ -91,8 +92,11 @@ nav {
       margin-left: 2em !important;
     }
   }
-  a {
-    @include nav-style;
+  .dropdown-item {
+    font-size: .75em;
+  }
+  :hover {
+    color: $color-hover !important;
   }
 }
 
