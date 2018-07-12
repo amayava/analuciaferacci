@@ -47,6 +47,7 @@ $img-saturation: saturate(60%);
 @mixin img-link-style {
   filter: $img-saturation;
   opacity: $img-opacity;
+  cursor: pointer;
 }
 
 @mixin link-style {
@@ -146,5 +147,12 @@ nav {
   text-align: center;
   a {
     @include box-link;
+  }
+}
+
+.modal {
+  font-family: $font-stack;
+  h1, h2, h3 {
+    font-size: $font-size;
   }
 }
