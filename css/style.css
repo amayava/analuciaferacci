@@ -27,11 +27,11 @@ nav {
   nav .dropdown-item {
     font-size: .75em; }
   nav :hover {
-    color: #C7C6C9 !important; }
+    color: #D5D4D7 !important; }
 
 .container {
   font-family: "Futura PT", "Open Sans", sans-serif;
-  font-size: 0.95em;
+  font-size: 0.9em;
   letter-spacing: 0.8px;
   word-spacing: 0.05em;
   color: #A6A4A9; }
@@ -42,8 +42,10 @@ nav {
     -moz-transition: .5s;
     -ms-transition: .5s;
     -o-transition: .5s; }
+    .container img .img-invisib {
+      position: absolute; }
   .container h1, .container h2, .container h3 {
-    font-size: 0.95em;
+    font-size: 0.9em;
     margin-bottom: 10px;
     line-height: 18px; }
   .container h1 {
@@ -65,7 +67,7 @@ nav {
       opacity: 0.8; }
   .container a:hover {
     text-decoration: none;
-    color: #C7C6C9; }
+    color: #D5D4D7; }
 
 .text-section:last-child {
   margin-bottom: 40px; }
@@ -76,6 +78,6 @@ nav {
     font-size: .7em !important;
     text-transform: uppercase;
     padding: 10px;
-    border: 1px solid #A6A4A9; }
+    border: 1px solid #D5D4D7; }
 
 /*# sourceMappingURL=style.css.map */
