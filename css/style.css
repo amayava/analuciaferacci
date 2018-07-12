@@ -20,7 +20,13 @@ nav {
     letter-spacing: 3px;
     color: #A6A4A9 !important;
     font-size: 1.3em; }
-  nav .navbar button {
+  nav .navbar-toggler {
+    color: #A6A4A9;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
     border: none !important; }
   @media screen and (min-width: 992px) {
     nav .nav-link {
@@ -59,6 +65,7 @@ nav {
     margin: 40px 0; }
   .container a {
     color: #A6A4A9;
+    transition: .5s;
     transition: .5s;
     -webkit-transition: .5s;
     -moz-transition: .5s;

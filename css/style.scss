@@ -37,11 +37,7 @@ $img-saturation: saturate(60%);
 
 @mixin img-style {
   padding-bottom: $img-margin;
-  transition: .5s;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -ms-transition: .5s;
-  -o-transition: .5s;
+  @include transition;
 }
 
 @mixin img-link-style {
@@ -53,10 +49,7 @@ $img-saturation: saturate(60%);
 @mixin link-style {
   color: $color-active;
   transition: .5s;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -ms-transition: .5s;
-  -o-transition: .5s;
+  @include transition;
 }
 
 @mixin link-style-hover {
@@ -71,6 +64,13 @@ $img-saturation: saturate(60%);
   border: 1px solid $color-hover;
 }
 
+@mixin transition {
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
 /* STYLE */
 
 body {
@@ -87,10 +87,10 @@ nav {
     @include nav-style;
     @include nav-brand-style;
   }
-  .navbar {
-    button {
-      border: none !important;
-    }
+  .navbar-toggler {
+    color: $color;
+    @include transition;
+    border: none !important;
   }
   .nav-link {
     @media screen and (min-width: 992px) {
