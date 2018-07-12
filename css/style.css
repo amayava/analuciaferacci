@@ -20,6 +20,8 @@ nav {
     letter-spacing: 3px;
     color: #A6A4A9 !important;
     font-size: 1.3em; }
+  nav .navbar button {
+    border: none !important; }
   @media screen and (min-width: 992px) {
     nav .nav-link {
       padding: 0px !important;

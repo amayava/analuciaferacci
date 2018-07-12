@@ -87,6 +87,11 @@ nav {
     @include nav-style;
     @include nav-brand-style;
   }
+  .navbar {
+    button {
+      border: none !important;
+    }
+  }
   .nav-link {
     @media screen and (min-width: 992px) {
       padding: 0px !important;
